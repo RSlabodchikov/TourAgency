@@ -40,7 +40,7 @@ public class RoomServiceImpl implements RoomService {
     }
 
     @Override
-    public Iterable<Room> getRoomBySettlementDate(Date date) {
-        return repository.getRoomBySettlementDate(date);
+    public Iterable<Room> getRoomBySettlementDate(Date settlementDate, Date evictionDate, int number) {
+        return repository.getRoomByDates(settlementDate, evictionDate, number);
     }
 }

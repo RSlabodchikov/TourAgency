@@ -15,11 +15,53 @@ public class Booking {
     @Column(name = "settlement_date")
     private Date settlementDate;
 
+    @Column(name = "eviction_date")
+    private Date evictionDate;
 
-    @ManyToOne(cascade = {CascadeType.ALL})
+    @Column(name = "total_price")
+    private int totalPrice;
+
+    @ManyToOne
     @JoinColumn(name = "room_id", nullable = false)
     private Room room;
 
+    @OneToOne
+    @JoinColumn(name = "client_id", nullable = false)
+    private Client client;
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Booking booking = (Booking) o;
+        return id == booking.id &&
+                totalPrice == booking.totalPrice &&
+                Objects.equals(settlementDate, booking.settlementDate) &&
+                Objects.equals(evictionDate, booking.evictionDate) &&
+                Objects.equals(room, booking.room) &&
+                Objects.equals(client, booking.client);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, settlementDate, evictionDate, totalPrice, room, client);
+    }
+
+    public Date getEvictionDate() {
+        return evictionDate;
+    }
+
+    public void setEvictionDate(Date evictionDate) {
+        this.evictionDate = evictionDate;
+    }
+
+    public int getTotalPrice() {
+        return totalPrice;
+    }
+
+    public void setTotalPrice(int totalPrice) {
+        this.totalPrice = totalPrice;
+    }
 
     public Client getClient() {
         return client;
@@ -29,9 +71,7 @@ public class Booking {
         this.client = client;
     }
 
-    @OneToOne(cascade = {CascadeType.ALL})
-    @JoinColumn(name = "client_id", nullable = false)
-    private Client client;
+
 
     public Room getRoom() {
         return room;
@@ -57,19 +97,5 @@ public class Booking {
         this.settlementDate = settlementDate;
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Booking booking = (Booking) o;
-        return id == booking.id &&
-                Objects.equals(settlementDate, booking.settlementDate) &&
-                Objects.equals(room, booking.room) &&
-                Objects.equals(client, booking.client);
-    }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(id, settlementDate, room, client);
-    }
 }

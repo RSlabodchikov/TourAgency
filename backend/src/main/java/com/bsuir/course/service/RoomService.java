@@ -14,5 +14,5 @@ public interface RoomService {
 
     void deleteRoomById(Long id);
 
-    Iterable<Room> getRoomBySettlementDate(Date date);
+    Iterable<Room> getRoomBySettlementDate(Date settlementDate, Date evictionDate, int number);
 }

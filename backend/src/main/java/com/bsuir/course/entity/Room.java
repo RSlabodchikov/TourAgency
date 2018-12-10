@@ -22,6 +22,10 @@ public class Room {
     private int price;
 
 
+    @NotNull
+    @Column(name = "number_of_clients")
+    private int numberOfClients;
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -29,12 +33,21 @@ public class Room {
         Room room = (Room) o;
         return id == room.id &&
                 number == room.number &&
-                price == room.price;
+                price == room.price &&
+                numberOfClients == room.numberOfClients;
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, number, price);
+        return Objects.hash(id, number, price, numberOfClients);
+    }
+
+    public int getNumberOfClients() {
+        return numberOfClients;
+    }
+
+    public void setNumberOfClients(int numberOfClients) {
+        this.numberOfClients = numberOfClients;
     }
 
     public int getPrice() {

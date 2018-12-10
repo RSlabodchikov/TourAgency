@@ -40,5 +40,4 @@ repository.deleteById(id);
         return repository.save(booking);
     }
 
-
 }

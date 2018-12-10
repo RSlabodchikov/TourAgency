@@ -1,7 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="980bc3d3-ed13-4365-8ed9-50cb06af7603" name="Default Changelist" comment="" />
+    <list default="true" id="980bc3d3-ed13-4365-8ed9-50cb06af7603" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/bsuir/course/controller/AccountController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/bsuir/course/controller/ClientController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/bsuir/course/controller/RoleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4919a81b-811e-426a-b43c-53d8caaa09d7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/4919a81b-811e-426a-b43c-53d8caaa09d7.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/bsuir/course/controller/BookingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/bsuir/course/controller/BookingController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/bsuir/course/controller/RoomController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/bsuir/course/controller/RoomController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/bsuir/course/entity/Booking.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/bsuir/course/entity/Booking.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/bsuir/course/entity/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/bsuir/course/entity/Room.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/bsuir/course/repository/RoomRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/bsuir/course/repository/RoomRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/bsuir/course/service/RoomService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/bsuir/course/service/RoomService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/bsuir/course/service/serviceImpl/BookingServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/bsuir/course/service/serviceImpl/BookingServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/bsuir/course/service/serviceImpl/RoomServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/bsuir/course/service/serviceImpl/RoomServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/com/bsuir/course/controller/RoomController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/com/bsuir/course/entity/Booking.class" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/classes/com/bsuir/course/entity/Booking.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/com/bsuir/course/entity/Room.class" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/classes/com/bsuir/course/entity/Room.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/com/bsuir/course/repository/RoomRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/classes/com/bsuir/course/repository/RoomRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/com/bsuir/course/service/RoomService.class" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/classes/com/bsuir/course/service/RoomService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/com/bsuir/course/service/serviceImpl/RoomServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/classes/com/bsuir/course/service/serviceImpl/RoomServiceImpl.class" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/be/target/" />
@@ -39,13 +60,6 @@
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="hostel: schema" type="c314c289:MysqlImplModel$Schema" />
       </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="hostel@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="hostel: schema" type="c314c289:MysqlImplModel$Schema" />
-        <item name="rooms: table" type="98d5ac3d:MysqlImplModel$Table" />
-      </path>
     </expand>
     <select />
   </component>
@@ -64,9 +78,10 @@
         <counts>
           <entry key="bookings" value="3" />
           <entry key="css" value="1" />
+          <entry key="gitignore" value="1" />
           <entry key="html" value="1" />
           <entry key="iml" value="2" />
-          <entry key="java" value="50" />
+          <entry key="java" value="60" />
           <entry key="properties" value="1" />
           <entry key="rooms" value="2" />
           <entry key="sql" value="3" />
@@ -78,9 +93,10 @@
         <counts>
           <entry key="CSS" value="1" />
           <entry key="Database Element" value="5" />
+          <entry key="Git file" value="1" />
           <entry key="HTML" value="1" />
           <entry key="IDEA_MODULE" value="2" />
-          <entry key="JAVA" value="50" />
+          <entry key="JAVA" value="60" />
           <entry key="Properties" value="1" />
           <entry key="Scratch" value="3" />
           <entry key="TypeScript" value="2" />
@@ -89,20 +105,20 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cell" value="13" />
-          <entry key="java" value="4461" />
+          <entry key="cell" value="68" />
+          <entry key="java" value="6757" />
           <entry key="properties" value="13" />
-          <entry key="sql" value="740" />
-          <entry key="txt" value="7" />
+          <entry key="sql" value="1108" />
+          <entry key="txt" value="24" />
           <entry key="xml" value="58" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="4461" />
-          <entry key="PLAIN_TEXT" value="7" />
+          <entry key="JAVA" value="6757" />
+          <entry key="PLAIN_TEXT" value="24" />
           <entry key="Properties" value="13" />
-          <entry key="Scratch" value="753" />
+          <entry key="Scratch" value="1176" />
           <entry key="XML" value="58" />
         </counts>
       </usages-collector>
@@ -116,122 +132,25 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/bsuir/course/entity/Booking.java">
+        <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/bsuir/course/controller/BookingController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+            <state relative-caret-position="51">
+              <caret line="3" column="39" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1621#1622#0" expanded="true" />
-                <element signature="e#1690#1691#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/bsuir/course/repository/BookingRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="74" selection-start-line="12" selection-start-column="74" selection-end-line="12" selection-end-column="74" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/bsuir/course/entity/Room.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#724#725#0" expanded="true" />
-                <element signature="e#778#779#0" expanded="true" />
-                <element signature="e#408#409#0" expanded="true" />
-                <element signature="e#436#437#0" expanded="true" />
-                <element signature="e#475#476#0" expanded="true" />
-                <element signature="e#509#510#0" expanded="true" />
+                <element signature="e#679#680#0" expanded="true" />
+                <element signature="e#727#728#0" expanded="true" />
+                <element signature="e#1259#1260#0" expanded="true" />
+                <element signature="e#1302#1303#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/bsuir/course/repository/RoomRepository.java">
+        <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/bsuir/course/entity/Booking.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/4919a81b-811e-426a-b43c-53d8caaa09d7/console.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="12" lean-forward="true" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="das://4919a81b-811e-426a-b43c-53d8caaa09d7/schema/hostel/table/bookings">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/bsuir/course/service/serviceImpl/RoomServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="381">
-              <caret line="43" column="54" selection-start-line="43" selection-start-column="54" selection-end-line="43" selection-end-column="54" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#353#354#0" expanded="true" />
-                <element signature="e#397#398#0" expanded="true" />
-                <element signature="e#594#595#0" expanded="true" />
-                <element signature="e#621#622#0" expanded="true" />
-                <element signature="e#679#680#0" expanded="true" />
-                <element signature="e#718#719#0" expanded="true" />
-                <element signature="e#771#772#0" expanded="true" />
-                <element signature="e#798#799#0" expanded="true" />
-                <element signature="e#902#903#0" expanded="true" />
-                <element signature="e#919#920#0" expanded="true" />
-                <element signature="e#1043#1044#0" expanded="true" />
-                <element signature="e#1070#1071#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/bsuir/course/controller/RoomController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="244">
-              <caret line="25" column="53" lean-forward="true" selection-start-line="25" selection-start-column="53" selection-end-line="25" selection-end-column="53" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#365#366#0" expanded="true" />
-                <element signature="e#403#404#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/bsuir/course/controller/BookingController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="168">
+              <caret line="23" column="45" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -249,6 +168,14 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Roman &lt;romanksl34@gmail.com&gt;" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -273,16 +200,19 @@
         <option value="$PROJECT_DIR$/backend/src/main/java/com/bsuir/course/service/RoleService.java" />
         <option value="$PROJECT_DIR$/backend/src/main/java/com/bsuir/course/service/serviceImpl/RoleServiceImpl.java" />
         <option value="$PROJECT_DIR$/backend/src/main/java/com/bsuir/course/service/BookingService.java" />
-        <option value="$PROJECT_DIR$/backend/src/main/java/com/bsuir/course/service/serviceImpl/BookingServiceImpl.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/com/bsuir/course/repository/BookingRepository.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/backend/src/main/java/com/bsuir/course/entity/Room.java" />
-        <option value="$PROJECT_DIR$/backend/src/main/java/com/bsuir/course/entity/Booking.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/4919a81b-811e-426a-b43c-53d8caaa09d7/console.sql" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/com/bsuir/course/repository/RoomRepository.java" />
         <option value="$PROJECT_DIR$/backend/src/main/java/com/bsuir/course/service/RoomService.java" />
         <option value="$PROJECT_DIR$/backend/src/main/java/com/bsuir/course/service/serviceImpl/RoomServiceImpl.java" />
-        <option value="$PROJECT_DIR$/backend/src/main/java/com/bsuir/course/controller/BookingController.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/com/bsuir/course/service/serviceImpl/BookingServiceImpl.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/com/bsuir/course/controller/RoleController.java" />
         <option value="$PROJECT_DIR$/backend/src/main/java/com/bsuir/course/controller/RoomController.java" />
-        <option value="$PROJECT_DIR$/backend/src/main/java/com/bsuir/course/repository/BookingRepository.java" />
-        <option value="$PROJECT_DIR$/backend/src/main/java/com/bsuir/course/repository/RoomRepository.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/com/bsuir/course/controller/ClientController.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/com/bsuir/course/controller/BookingController.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/com/bsuir/course/entity/Booking.java" />
       </list>
     </option>
   </component>
@@ -332,10 +262,13 @@
       <path value="$PROJECT_DIR$/frontend/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-10" />
     <option name="width" value="979" />
     <option name="height" value="1090" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -497,18 +430,26 @@
       <workItem from="1544269131617" duration="571000" />
       <workItem from="1544269748654" duration="1084000" />
       <workItem from="1544270859122" duration="8712000" />
-      <workItem from="1544435849352" duration="10353000" />
+      <workItem from="1544435849352" duration="17982000" />
     </task>
+    <task id="LOCAL-00001" summary="2nd commit">
+      <created>1544447324330</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1544447324330</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20720000" />
+    <option name="totallyTimeSpent" value="28349000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21946308" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21946308" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info id="Designer" order="3" />
@@ -516,7 +457,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3297587" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.3994638" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3994638" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -544,17 +485,9 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/backend/src/main/java/com/bsuir/course/controller/RoomController.java</url>
-          <line>23</line>
-          <properties />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="2nd commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="2nd commit" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/be/pom.xml" />
@@ -595,13 +528,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
           <caret line="27" selection-start-line="27" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/bsuir/course/entity/Account.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -722,48 +648,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/bsuir/course/service/serviceImpl/RoleServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="37" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#421#422#0" expanded="true" />
-            <element signature="e#465#466#0" expanded="true" />
-            <element signature="e#325#326#0" expanded="true" />
-            <element signature="e#352#353#0" expanded="true" />
-            <element signature="e#416#417#0" expanded="true" />
-            <element signature="e#455#456#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/bsuir/course/service/BookingService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/bsuir/course/service/serviceImpl/BookingServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="559">
-          <caret line="42" selection-start-line="42" selection-end-line="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#464#465#0" expanded="true" />
-            <element signature="e#508#509#0" expanded="true" />
-            <element signature="e#642#643#0" expanded="true" />
-            <element signature="e#673#674#0" expanded="true" />
-            <element signature="e#445#446#0" expanded="true" />
-            <element signature="e#484#485#0" expanded="true" />
-            <element signature="e#548#549#0" expanded="true" />
-            <element signature="e#575#576#0" expanded="true" />
-            <element signature="e#640#641#0" expanded="true" />
-            <element signature="e#667#668#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -778,89 +668,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/bsuir/course/entity/Room.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#724#725#0" expanded="true" />
-            <element signature="e#778#779#0" expanded="true" />
-            <element signature="e#408#409#0" expanded="true" />
-            <element signature="e#436#437#0" expanded="true" />
-            <element signature="e#475#476#0" expanded="true" />
-            <element signature="e#509#510#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/bsuir/course/entity/Booking.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1621#1622#0" expanded="true" />
-            <element signature="e#1690#1691#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="das://4919a81b-811e-426a-b43c-53d8caaa09d7/schema/hostel/table/rooms">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://4919a81b-811e-426a-b43c-53d8caaa09d7/schema/hostel/table/bookings">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/bsuir/course/service/serviceImpl/RoomServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="381">
-          <caret line="43" column="54" selection-start-line="43" selection-start-column="54" selection-end-line="43" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#353#354#0" expanded="true" />
-            <element signature="e#397#398#0" expanded="true" />
-            <element signature="e#594#595#0" expanded="true" />
-            <element signature="e#621#622#0" expanded="true" />
-            <element signature="e#679#680#0" expanded="true" />
-            <element signature="e#718#719#0" expanded="true" />
-            <element signature="e#771#772#0" expanded="true" />
-            <element signature="e#798#799#0" expanded="true" />
-            <element signature="e#902#903#0" expanded="true" />
-            <element signature="e#919#920#0" expanded="true" />
-            <element signature="e#1043#1044#0" expanded="true" />
-            <element signature="e#1070#1071#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/bsuir/course/controller/BookingController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/bsuir/course/controller/RoomController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="25" column="53" lean-forward="true" selection-start-line="25" selection-start-column="53" selection-end-line="25" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#365#366#0" expanded="true" />
-            <element signature="e#403#404#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -874,27 +685,189 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/bsuir/course/service/RoomService.java">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/bsuir/course/entity/Room.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="54" selection-start-line="16" selection-start-column="54" selection-end-line="16" selection-end-column="54" />
+        <state relative-caret-position="493">
+          <caret line="29" column="37" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#945#946#0" expanded="true" />
+            <element signature="e#1016#1017#0" expanded="true" />
+            <element signature="e#580#581#0" expanded="true" />
+            <element signature="e#618#619#0" expanded="true" />
+            <element signature="e#677#678#0" expanded="true" />
+            <element signature="e#731#732#0" expanded="true" />
+            <element signature="e#408#409#0" expanded="true" />
+            <element signature="e#436#437#0" expanded="true" />
+            <element signature="e#475#476#0" expanded="true" />
+            <element signature="e#509#510#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://4919a81b-811e-426a-b43c-53d8caaa09d7/schema/hostel/table/bookings">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/4919a81b-811e-426a-b43c-53d8caaa09d7/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="69" selection-start-line="6" selection-start-column="69" selection-end-line="6" selection-end-column="105" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/bsuir/course/controller/AccountController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="30" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/bsuir/course/entity/Account.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/4919a81b-811e-426a-b43c-53d8caaa09d7/console.sql">
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/bsuir/course/service/serviceImpl/RoomServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="12" lean-forward="true" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+        <state relative-caret-position="279">
+          <caret line="42" column="100" selection-start-line="42" selection-start-column="100" selection-end-line="42" selection-end-column="100" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#353#354#0" expanded="true" />
+            <element signature="e#397#398#0" expanded="true" />
+            <element signature="e#594#595#0" expanded="true" />
+            <element signature="e#621#622#0" expanded="true" />
+            <element signature="e#679#680#0" expanded="true" />
+            <element signature="e#718#719#0" expanded="true" />
+            <element signature="e#771#772#0" expanded="true" />
+            <element signature="e#798#799#0" expanded="true" />
+            <element signature="e#902#903#0" expanded="true" />
+            <element signature="e#919#920#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/bsuir/course/service/RoomService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="93" selection-start-line="16" selection-start-column="93" selection-end-line="16" selection-end-column="93" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/bsuir/course/repository/RoomRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="323">
+          <caret line="19" column="148" selection-start-line="19" selection-start-column="148" selection-end-line="19" selection-end-column="148" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/bsuir/course/service/serviceImpl/RoleServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="29" column="37" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/bsuir/course/service/serviceImpl/BookingServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="41" column="4" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#575#576#0" expanded="true" />
+            <element signature="e#619#620#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/bsuir/course/controller/ClientController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="27" column="25" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#469#470#0" expanded="true" />
+            <element signature="e#507#508#0" expanded="true" />
+            <element signature="e#804#805#0" expanded="true" />
+            <element signature="e#851#852#0" expanded="true" />
+            <element signature="e#990#991#0" expanded="true" />
+            <element signature="e#1034#1035#0" expanded="true" />
+            <element signature="e#983#984#0" expanded="true" />
+            <element signature="e#1004#1005#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/bsuir/course/controller/RoleController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="12" column="23" lean-forward="true" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#494#495#0" expanded="true" />
+            <element signature="e#532#533#0" expanded="true" />
+            <element signature="e#619#620#0" expanded="true" />
+            <element signature="e#663#664#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/bsuir/course/controller/RoomController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#365#366#0" expanded="true" />
+            <element signature="e#403#404#0" expanded="true" />
+            <element signature="e#760#761#0" expanded="true" />
+            <element signature="e#805#806#0" expanded="true" />
+            <element signature="e#1525#1526#0" expanded="true" />
+            <element signature="e#1565#1566#0" expanded="true" />
+            <element signature="e#1706#1707#0" expanded="true" />
+            <element signature="e#1728#1729#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/bsuir/course/controller/BookingController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="39" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
+          <folding>
+            <element signature="e#679#680#0" expanded="true" />
+            <element signature="e#727#728#0" expanded="true" />
+            <element signature="e#1259#1260#0" expanded="true" />
+            <element signature="e#1302#1303#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/bsuir/course/entity/Booking.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="23" column="45" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
