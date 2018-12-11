@@ -11,7 +11,7 @@ import java.sql.Date;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("/rooms")
+@RequestMapping("/ba/rooms")
 public class RoomController {
     private RoomService service;
 

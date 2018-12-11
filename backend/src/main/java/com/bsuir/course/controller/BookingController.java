@@ -7,11 +7,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.sql.Date;
 import java.util.Optional;
 
 @RestController
-@RequestMapping(value = "/bookings")
+@RequestMapping(value = "/ba/bookings")
 public class BookingController {
 
     private BookingService service;
@@ -41,6 +40,8 @@ public class BookingController {
     public Booking saveBooking(@RequestBody Booking booking){
         return service.saveBooking(booking);
     }
+
+
     @RequestMapping(value="/{id}", method = RequestMethod.DELETE)
     public ResponseEntity<Booking> deleteBooking(@PathVariable Long id){
         service.deleteBookingById(id);

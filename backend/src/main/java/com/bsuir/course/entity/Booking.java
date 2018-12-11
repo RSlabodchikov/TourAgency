@@ -71,8 +71,6 @@ public class Booking {
         this.client = client;
     }
 
-
-
     public Room getRoom() {
         return room;
     }

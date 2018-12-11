@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("/roles")
+@RequestMapping("/ba/roles")
 public class RoleController {
 
 
@@ -27,8 +27,8 @@ public class RoleController {
     }
 
     @RequestMapping(value = "/{id}", method = RequestMethod.GET)
-    public ResponseEntity<Role> getRoleById(@PathVariable(name = "id") Long id) {
-        Optional<Role> role = service.getRoleById(id);
+    public ResponseEntity<Role> getRoleById(@PathVariable(name = "id") String id) {
+        Optional<Role> role = service.getRoleById(Long.valueOf(id));
         if (role.isPresent()) {
             return ResponseEntity.ok(role.get());
         } else {
