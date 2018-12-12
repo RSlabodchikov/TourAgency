@@ -40,4 +40,8 @@ repository.deleteById(id);
         return repository.save(booking);
     }
 
+    @Override
+    public Iterable<Booking> findBookingByUserMail(String mail) {
+        return repository.findAllByClientMail(mail);
+    }
 }

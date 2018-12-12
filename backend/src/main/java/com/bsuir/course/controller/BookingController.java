@@ -47,4 +47,9 @@ public class BookingController {
         service.deleteBookingById(id);
         return ResponseEntity.notFound().build();
     }
+
+    @RequestMapping(value="/clients", method=RequestMethod.GET)
+    public Iterable<Booking> getAllByMail(@RequestParam(name="mail")String mail){
+        return service.findBookingByUserMail(mail);
+    }
 }

@@ -3,8 +3,8 @@ import {Client} from './client';
 
 export class Booking{
   id:number;
-  settlementDate:Date;
-  evictionDate:Date;
+  settlementDate:string;
+  evictionDate:string;
   totalPrice:number;
   room:Room;
   client:Client;

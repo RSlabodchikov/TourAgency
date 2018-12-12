@@ -1,18 +1,16 @@
-import {Account} from './account';
-
 export class Client {
   id: number;
   name: string;
   surname: string;
-  address: string;
-  account: Account;
+  mail: string;
+  phoneNumber: string;
   static cloneBaseClient(client:Client):Client{
     let clonedClient:Client=new Client();
-    clonedClient.account=Account.cloneBaseAccount(client.account);
     clonedClient.id=client.id;
     clonedClient.name=client.name;
     clonedClient.surname=client.surname;
-    clonedClient.address=client.address;
+    clonedClient.mail=client.mail;
+    clonedClient.phoneNumber=client.phoneNumber;
     return clonedClient;
   }
 

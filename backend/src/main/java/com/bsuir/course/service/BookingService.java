@@ -15,4 +15,6 @@ public interface BookingService {
 
     Booking saveBooking(Booking booking);
 
+    Iterable<Booking> findBookingByUserMail(String mail);
+
 }

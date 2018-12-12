@@ -21,21 +21,13 @@ public class Client {
     private String surname;
 
     @NotNull
-    @Column(name = "address")
-    private String address;
+    @Column(name = "phone_number")
+    private String phoneNumber;
 
-    @OneToOne(cascade = {CascadeType.ALL})
-    @JoinColumn(name = "account_id")
-    private Account account;
+    @NotNull
+    @Column(name="mail")
+    private String mail;
 
-
-    public Account getAccount() {
-        return account;
-    }
-
-    public void setAccount(Account account) {
-        this.account = account;
-    }
 
     public long getId() {
         return id;
@@ -61,12 +53,8 @@ public class Client {
         this.surname = surname;
     }
 
-    public String getAddress() {
-        return address;
-    }
-
-    public void setAddress(String address) {
-        this.address = address;
+    public String getPhoneNumber() {
+        return phoneNumber;
     }
 
     @Override
@@ -77,12 +65,24 @@ public class Client {
         return id == client.id &&
                 Objects.equals(name, client.name) &&
                 Objects.equals(surname, client.surname) &&
-                Objects.equals(address, client.address) &&
-                Objects.equals(account, client.account);
+                Objects.equals(phoneNumber, client.phoneNumber) &&
+                Objects.equals(mail, client.mail);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, name, surname, address, account);
+        return Objects.hash(id, name, surname, phoneNumber, mail);
+    }
+
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
+    }
+
+    public String getMail() {
+        return mail;
+    }
+
+    public void setMail(String mail) {
+        this.mail = mail;
     }
 }
