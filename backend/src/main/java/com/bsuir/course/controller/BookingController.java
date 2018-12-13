@@ -45,7 +45,7 @@ public class BookingController {
     @RequestMapping(value="/{id}", method = RequestMethod.DELETE)
     public ResponseEntity<Booking> deleteBooking(@PathVariable Long id){
         service.deleteBookingById(id);
-        return ResponseEntity.notFound().build();
+        return ResponseEntity.noContent().build();
     }
 
     @RequestMapping(value="/clients", method=RequestMethod.GET)
