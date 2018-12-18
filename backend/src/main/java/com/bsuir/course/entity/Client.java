@@ -24,9 +24,10 @@ public class Client {
     @Column(name = "phone_number")
     private String phoneNumber;
 
-    @NotNull
-    @Column(name="mail")
-    private String mail;
+
+    @OneToOne(cascade = {CascadeType.ALL})
+    @JoinColumn(name="account_id")
+    private Account account;
 
 
     public long getId() {
@@ -57,6 +58,19 @@ public class Client {
         return phoneNumber;
     }
 
+
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
+    }
+
+    public Account getAccount() {
+        return account;
+    }
+
+    public void setAccount(Account account) {
+        this.account = account;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -66,23 +80,11 @@ public class Client {
                 Objects.equals(name, client.name) &&
                 Objects.equals(surname, client.surname) &&
                 Objects.equals(phoneNumber, client.phoneNumber) &&
-                Objects.equals(mail, client.mail);
+                Objects.equals(account, client.account);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, name, surname, phoneNumber, mail);
-    }
-
-    public void setPhoneNumber(String phoneNumber) {
-        this.phoneNumber = phoneNumber;
-    }
-
-    public String getMail() {
-        return mail;
-    }
-
-    public void setMail(String mail) {
-        this.mail = mail;
+        return Objects.hash(id, name, surname, phoneNumber, account);
     }
 }

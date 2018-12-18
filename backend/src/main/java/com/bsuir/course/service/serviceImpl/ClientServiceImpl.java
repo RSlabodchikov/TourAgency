@@ -4,12 +4,17 @@ import com.bsuir.course.entity.Client;
 import com.bsuir.course.repository.ClientRepository;
 import com.bsuir.course.service.ClientService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.util.Optional;
 
 @Service
 public class ClientServiceImpl implements ClientService {
+
+
+    @Autowired
+    private BCryptPasswordEncoder bcryptEncoder;
 
     private ClientRepository repository;
 
@@ -35,6 +40,8 @@ public class ClientServiceImpl implements ClientService {
 
     @Override
     public Client saveClient(Client client) {
+        String newPassword = bcryptEncoder.encode(client.getAccount().getPassword());
+        client.getAccount().setPassword(newPassword);
         return repository.save(client);
     }
 }

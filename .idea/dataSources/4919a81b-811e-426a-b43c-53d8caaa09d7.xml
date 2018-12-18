@@ -1116,58 +1116,83 @@
       <Charset>utf8mb4</Charset>
       <DefaultForCharset>0</DefaultForCharset>
     </collation>
-    <table id="281" parent="3" name="bookings"/>
-    <table id="282" parent="3" name="clients"/>
-    <table id="283" parent="3" name="rooms"/>
-    <column id="284" parent="281" name="id">
+    <table id="281" parent="3" name="accounts"/>
+    <table id="282" parent="3" name="bookings"/>
+    <table id="283" parent="3" name="clients"/>
+    <table id="284" parent="3" name="rooms"/>
+    <column id="285" parent="281" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="285" parent="281" name="settlement_date">
+    <column id="286" parent="281" name="mail">
+      <Position>2</Position>
+      <DataType>varchar(45)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="287" parent="281" name="password">
+      <Position>3</Position>
+      <DataType>varchar(45)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="288" parent="281" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="289" parent="282" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="290" parent="282" name="settlement_date">
       <Position>2</Position>
       <DataType>date|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="286" parent="281" name="eviction_date">
+    <column id="291" parent="282" name="eviction_date">
       <Position>3</Position>
       <DataType>date|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="287" parent="281" name="room_id">
+    <column id="292" parent="282" name="room_id">
       <Position>4</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="288" parent="281" name="client_id">
+    <column id="293" parent="282" name="client_id">
       <Position>5</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="289" parent="281" name="total_price">
+    <column id="294" parent="282" name="total_price">
       <Position>6</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="290" parent="281" name="room_id_fk_idx">
+    <index id="295" parent="282" name="room_id_fk_idx">
       <ColNames>room_id</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="291" parent="281" name="client_id_fk_idx">
+    <index id="296" parent="282" name="client_id_fk_idx">
       <ColNames>client_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="292" parent="281" name="PRIMARY">
+    <key id="297" parent="282" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="293" parent="281" name="room_id_fk">
+    <foreign-key id="298" parent="282" name="room_id_fk">
       <ColNames>room_id</ColNames>
       <RefSchemaName>hostel</RefSchemaName>
       <RefTableName>rooms</RefTableName>
@@ -1175,7 +1200,7 @@
       <OnUpdate>cascade</OnUpdate>
       <OnDelete>cascade</OnDelete>
     </foreign-key>
-    <foreign-key id="294" parent="281" name="client_id_fk">
+    <foreign-key id="299" parent="282" name="client_id_fk">
       <ColNames>client_id</ColNames>
       <RefSchemaName>hostel</RefSchemaName>
       <RefTableName>clients</RefTableName>
@@ -1183,69 +1208,80 @@
       <OnUpdate>cascade</OnUpdate>
       <OnDelete>cascade</OnDelete>
     </foreign-key>
-    <column id="295" parent="282" name="id">
+    <column id="300" parent="283" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="296" parent="282" name="name">
+    <column id="301" parent="283" name="name">
       <Position>2</Position>
       <DataType>varchar(45)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="297" parent="282" name="surname">
+    <column id="302" parent="283" name="surname">
       <Position>3</Position>
       <DataType>varchar(45)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="298" parent="282" name="mail">
+    <column id="303" parent="283" name="phone_number">
       <Position>4</Position>
-      <DataType>varchar(45)|0s</DataType>
-      <NotNull>1</NotNull>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="299" parent="282" name="phone_number">
-      <Position>5</Position>
       <DataType>varchar(15)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="300" parent="282" name="PRIMARY">
+    <column id="304" parent="283" name="account_id">
+      <Position>5</Position>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="305" parent="283" name="account_id_fk_idx">
+      <ColNames>account_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="306" parent="283" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="301" parent="283" name="id">
+    <foreign-key id="307" parent="283" name="account_id_fk">
+      <ColNames>account_id</ColNames>
+      <RefSchemaName>hostel</RefSchemaName>
+      <RefTableName>accounts</RefTableName>
+      <RefColNames>id</RefColNames>
+      <OnUpdate>cascade</OnUpdate>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
+    <column id="308" parent="284" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="302" parent="283" name="number">
+    <column id="309" parent="284" name="number">
       <Position>2</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="303" parent="283" name="price">
+    <column id="310" parent="284" name="price">
       <Position>3</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="304" parent="283" name="number_of_clients">
+    <column id="311" parent="284" name="number_of_clients">
       <Position>4</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>&apos;1&apos;</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="305" parent="283" name="PRIMARY">
+    <key id="312" parent="284" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
