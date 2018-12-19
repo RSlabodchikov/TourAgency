@@ -25,7 +25,7 @@ public class Booking {
     @JoinColumn(name = "room_id", nullable = false)
     private Room room;
 
-    @OneToOne(cascade ={CascadeType.ALL})
+    @ManyToOne
     @JoinColumn(name = "client_id", nullable = false)
     private Client client;
 

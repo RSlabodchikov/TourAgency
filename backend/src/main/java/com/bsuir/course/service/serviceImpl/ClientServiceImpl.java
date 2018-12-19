@@ -44,4 +44,9 @@ public class ClientServiceImpl implements ClientService {
         client.getAccount().setPassword(newPassword);
         return repository.save(client);
     }
+
+    @Override
+    public Optional<Client> findClientByMail(String mail) {
+        return repository.findClientByMail(mail);
+    }
 }

@@ -1,7 +1,6 @@
 package com.bsuir.course.controller;
 
 import com.bsuir.course.entity.Client;
-import com.bsuir.course.entity.Room;
 import com.bsuir.course.service.ClientService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -26,23 +25,33 @@ public class ClientController {
     }
 
     @RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
-    public void deleteClientById(@PathVariable(name = "id")Long id) {
+    public void deleteClientById(@PathVariable(name = "id") Long id) {
         service.deleteClientById(id);
     }
 
     @RequestMapping(method = RequestMethod.POST)
-    public Client saveClient(@RequestBody Client client){
+    public Client saveClient(@RequestBody Client client) {
         return service.saveClient(client);
     }
 
-    @RequestMapping(value="/{id}", method =RequestMethod.GET)
-    public ResponseEntity<Client> getClientById(@PathVariable("id")Long id){
-        Optional<Client>client=service.findClientById(id);
-        if (client.isPresent()){
+    @RequestMapping(value = "/{id}", method = RequestMethod.GET)
+    public ResponseEntity<Client> getClientById(@PathVariable("id") Long id) {
+        Optional<Client> client = service.findClientById(id);
+        if (client.isPresent()) {
             return ResponseEntity.ok(client.get());
-        }else{
+        } else {
             return ResponseEntity.notFound().build();
         }
 
+    }
+
+    @RequestMapping(value = "/mail/{mail}", method = RequestMethod.GET)
+    public ResponseEntity<Client> getClientByMail(@PathVariable("mail") String mail) {
+        Optional<Client> client = service.findClientByMail(mail);
+        if (client.isPresent()) {
+            return ResponseEntity.ok(client.get());
+        } else {
+            return ResponseEntity.notFound().build();
+        }
     }
 }

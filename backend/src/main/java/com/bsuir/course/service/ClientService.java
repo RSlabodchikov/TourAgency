@@ -9,4 +9,5 @@ public interface ClientService {
     Iterable<Client> findAllClients();
     Optional<Client> findClientById(Long id);
     Client saveClient(Client client);
+    Optional<Client> findClientByMail(String mail);
 }
